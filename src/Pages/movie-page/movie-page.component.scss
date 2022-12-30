@@ -1,0 +1,14 @@
+.movie-page{
+    text-align: center;
+    &__title{
+        font-size: 3.5rem;
+    }
+    &__release-date{
+        font-size: 2.5rem;
+    }
+    &__overview{
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    
+}

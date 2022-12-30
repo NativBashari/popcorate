@@ -1,0 +1,17 @@
+<div class="list-component">
+    <h3 class="list-component__title">{{listTitle}}</h3>
+    <div class="cover">
+        <div class="button-box">
+            <button  class="left" (click)="scrollLeft()">&#8592;</button>
+        </div>
+            <div class="movie-list-container mostly-customized-scrollbar" #listContent>
+                <div *ngFor="let movie of moviesList" >
+                    <app-movie-item  [movieId]="movie.id"></app-movie-item>
+                </div>
+            </div>
+            <div class="button-box">
+                <button class="right" (click)="scrollRight()">&#8594;</button> 
+            </div>
+    </div>
+</div>
+

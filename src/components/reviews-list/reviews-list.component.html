@@ -1,0 +1,5 @@
+<section class="reviews-grid">
+    <div *ngFor="let review of movieReviews.results">
+        <app-review-item [review]="review"></app-review-item>
+    </div>
+</section>

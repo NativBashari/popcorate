@@ -1,0 +1,7 @@
+<form action="submit">
+    <div class="form__group field">
+        <input [(ngModel)]="searchBoxValue" type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label">Search for movie</label>
+      </div>
+      <button type="submit" (click)="searchMovie()">Search</button>
+</form>

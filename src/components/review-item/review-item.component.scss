@@ -1,0 +1,33 @@
+
+.review-box{
+    border: 1px solid #000;
+    height: 100%;
+
+    
+    
+}
+
+.review-details{
+    &__content-box{
+        font-size: 1.3rem;
+    }
+}
+.user-details{
+    display: flex;
+    align-items: center;
+
+    &__username{
+        font-size: 1.5rem;
+        align-self: center;
+        margin-left: 0.5rem;
+    }
+
+    &__avatar{
+        height: 3.5rem;
+        border-radius: 50%;
+    }
+}
+.review-icons{
+    display: flex;
+    justify-content: space-around;
+}
