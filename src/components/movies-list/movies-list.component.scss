@@ -48,4 +48,7 @@ button{
     &:hover{
         background-color: aliceblue;
     }
+    @media only screen and (max-width: 700px){
+        display: none;   
+       }
 }
