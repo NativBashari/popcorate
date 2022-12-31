@@ -1,0 +1,6 @@
+<div class="discover-genre-container">
+    <h3 class="discover-genre-container__title">Genres</h3>
+    <ul class="discover-genre-container__genres-list mostly-customized-scrollbar">
+        <li *ngFor="let genre of genresList.genres"><a (click)="moveToGenre(genre.id)">{{genre.name}}</a></li>
+    </ul>
+</div>

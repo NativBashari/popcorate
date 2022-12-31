@@ -2,12 +2,7 @@
     <div class="discover-container__search-box">      
         <app-search-movie></app-search-movie>
     </div>
-    <div class="discover-genre-container">
-        <h3 class="discover-genre-container__title">Genres</h3>
-        <ul class="discover-genre-container__genres-list mostly-customized-scrollbar">
-            <li *ngFor="let genre of genresList.genres"><a (click)="moveToGenre(genre.id)">{{genre.name}}</a></li>
-        </ul>
-    </div>
+    <app-genres-list></app-genres-list>
     <app-movies-list [moviesList]="popularMovies.results" [listTitle]="'Popular Movies'"></app-movies-list>
     <app-movies-list [moviesList]="topRatedMovies.results" [listTitle]="'Top Rated'"></app-movies-list>
     <app-movies-list [moviesList]="kidsMovies.results" [listTitle]="'For Kids'"></app-movies-list>

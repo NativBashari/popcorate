@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '_variables';
+
 html {
     margin: 0;
     padding: 0;
@@ -18,4 +20,6 @@ p{
   .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
     background:  rgb(151, 212, 212);
   }
- 
+ body{
+    background-color: $primary-color;
+ }

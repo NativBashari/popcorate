@@ -1,5 +1,6 @@
-$primary: #11998e;
-$secondary: #38ef7d;
+@import '_variables';
+
+$secondary: $terniary-color;
 $white: #fff;
 $gray: #9b9b9b;
 .form__group {
@@ -16,7 +17,7 @@ $gray: #9b9b9b;
   border-bottom: 2px solid $gray;
   outline: 0;
   font-size: 1.3rem;
-  color: $primary;
+  color: $terniary-color;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -48,13 +49,13 @@ $gray: #9b9b9b;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: $primary;
+    color: $terniary-color;
     font-weight:700;    
   }
   padding-bottom: 6px;  
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image: linear-gradient(to right, red,$secondary);
   border-image-slice: 1;
 }
 /* reset input */

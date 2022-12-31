@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import DiscoverList from 'src/Services/DiscoverList.service';
-import GenresService from 'src/Services/GenresService.service';
 
 @Component({
   selector: 'app-discover-page',
@@ -13,8 +11,7 @@ export class DiscoverPageComponent implements OnInit {
   topRatedMovies: any;
   kidsMovies: any;
   moviesReleasedThisYear: any;
-  genresList: any;
-  constructor(private discoverList: DiscoverList, private genreService: GenresService, private router: Router) { }
+  constructor(private discoverList: DiscoverList) { }
 
   ngOnInit(): void {
    this.getData();
@@ -33,14 +30,9 @@ export class DiscoverPageComponent implements OnInit {
     this.discoverList.getMoviesReleasedThisYear().subscribe(res => {
       this.moviesReleasedThisYear = res;
     })
-    this.genreService.getGenresList().subscribe(res => {
-      this.genresList = res;
-    })
+  
 
   }
 
-  moveToGenre(genreId: number){
-    this.router.navigate(['/genre', genreId]);
 
-  }
 }

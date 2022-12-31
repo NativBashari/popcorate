@@ -1,6 +1,8 @@
+@import '_variables';
 .list-component{
-    text-align: center;
-    margin: 1.5rem;
+    text-align: left;
+    margin: auto 8rem;
+    color: $font-color;
     &__title{
         font-size: 3.5rem;
         padding-top: 1.5rem;
@@ -14,6 +16,7 @@
 .movie-list-container{
      display: flex;
      overflow: hidden;
+     
      @media only screen and (max-width: 700px){
         overflow: auto;   
        }
@@ -22,6 +25,9 @@
 .cover{
     padding: 0px 30px;
     position: relative;
+    @media only screen and (max-width: 700px){
+        padding: 0;
+       }
    
 }
 .button-box{
@@ -47,7 +53,7 @@
   }
 button{
     border: none;
-    background-color: transparent;
+    background-color: $terniary-color;
     &:hover{
         background-color: aliceblue;
     }

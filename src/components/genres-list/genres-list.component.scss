@@ -1,0 +1,42 @@
+@import '_variables';
+.discover-genre-container{
+    
+    margin: auto 8rem;
+    font-family: 'Caramel', cursive;  
+    color: $font-color;
+    text-align: left;
+    &__title{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        @media only screen and (max-width: 700px){
+            font-size: 2.5rem;   
+           }
+    }
+
+    &__genres-list{
+        list-style: none;
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: space-around;
+        overflow: auto;
+        li{
+            margin-left: 4rem;
+            transition: all .2s;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+            @media only screen and (max-width: 700px){
+                margin-left: 2.5rem;   
+               }
+        }
+        @media only screen and (max-width: 700px){
+            font-size: 1.5rem;   
+           }
+
+    }
+
+}

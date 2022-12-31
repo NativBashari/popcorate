@@ -3,20 +3,17 @@
 </div>
 <div class="movie-box" *ngIf="movie != undefined" (mouseenter)="mouseHover()" (mouseleave)="mouseLeave()" (click)="moveToMovieDetails()">
     <div>
-        <h3 class="movie-box__title">{{movie.title}}</h3>
-    </div>
-    <div>
-        <p class="movie-box__release-date">{{movie.release_date | date}}</p>
-    </div>
-    <div class="overview-container">
-        <p class="movie-box__overview">{{movie.overview}}</p>
-    </div>
-    <div>
-        <ul>
-            <li *ngFor="let genre of movie.genres" class="movie-box__genre">{{genre.name}}</li>
-        </ul>
-    </div>
-    <div>
         <img class="movie-box__img" [src]="movieBackdropPath" (error)="updateUrl($event)"> 
     </div>
+    <div class="movie-box__information">
+        <div>
+            <p class="movie-box__release-date">{{movie.release_date | date :'yyyy'}}</p>
+        </div>
+        <div>
+            <h6 class="movie-box__title">{{movie.title}}</h6>
+        </div>
+    </div>
+   
+   
+   
 </div>
