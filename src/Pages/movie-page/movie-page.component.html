@@ -1,17 +1,11 @@
-<div class="movie-page">
-    <div>
-        <h2 class="movie-page__title">{{movie.title}}</h2>
-    </div>
-    <div>
-        <p class="movie-page__release-date">{{movie.release_date | date}}</p>
-    </div>
-    <div>
-        <p class="movie-page__overview">{{movie.overview}}</p>
-    </div>
+<section class="movie-page">
+    <section>
+        <app-movie-overview [movie]="movie"></app-movie-overview>
+    </section>
     <div>
         <app-movie-galery [movieId]="movie.id"></app-movie-galery>
     </div>
     <div>
         <app-reviews-list [movieId]="id"></app-reviews-list>
     </div>
-</div>
+</section>

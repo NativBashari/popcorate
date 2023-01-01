@@ -4,12 +4,12 @@
     margin: auto 8rem;
     color: $font-color;
     &__title{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         padding-top: 1.5rem;
         text-transform: uppercase;
-        font-family: 'Caramel', cursive;
+        font-family: 'Dosis', sans-serif; 
         @media only screen and (max-width: 700px){
-            font-size: 2.5rem;   
+            font-size: 1.5rem;   
            }
     }
     @media only screen and (max-width: 700px){
@@ -34,7 +34,7 @@
    
 }
 .button-box{
-    height: 95%;
+    height: 15%;
     @media only screen and (max-width: 700px){
         height: 100%;   
        }
@@ -43,7 +43,7 @@
   .left {
     position: absolute;
     left: 0;
-    top: 0%;
+    top: 40%;
     height: inherit;
     //transform: translateY(-50%);
   }

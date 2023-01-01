@@ -21,6 +21,7 @@ import { SearchMovieComponent } from '../components/search-movie/search-movie.co
 import { FormsModule } from '@angular/forms';
 import { SearchResultsPageComponent } from '../Pages/search-results-page/search-results-page.component';
 import { GenresListComponent } from '../components/genres-list/genres-list.component';
+import { MovieOverviewComponent } from '../components/movie-overview/movie-overview.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { GenresListComponent } from '../components/genres-list/genres-list.compo
     HeaderComponent,
     SearchMovieComponent,
     SearchResultsPageComponent,
-    GenresListComponent
+    GenresListComponent,
+    MovieOverviewComponent
     ],
   imports: [
     BrowserModule,

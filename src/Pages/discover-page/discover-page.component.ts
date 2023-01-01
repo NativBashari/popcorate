@@ -31,6 +31,7 @@ export class DiscoverPageComponent implements OnInit {
       this.moviesReleasedThisYear = res;
     })
   
+  
 
   }
 

@@ -2,14 +2,14 @@
 .discover-genre-container{
     
     margin: auto 8rem;
-    font-family: 'Caramel', cursive;  
+    font-family: 'Dosis', sans-serif; ;  
     color: $font-color;
     text-align: left;
     &__title{
         font-size: 2.5rem;
         text-transform: uppercase;
         @media only screen and (max-width: 700px){
-            font-size: 2.5rem;   
+            font-size: 1.5rem;   
            }
     }
 
@@ -21,7 +21,7 @@
         justify-content: space-around;
         overflow: auto;
         li{
-            margin-left: 4rem;
+            margin-left: 1rem;
             transition: all .2s;
             a{
                 text-decoration: none;
@@ -29,6 +29,8 @@
             }
             &:hover{
                 transform: scale(1.2);
+                color: $terniary-color;
+                cursor: pointer;
             }
             @media only screen and (max-width: 700px){
                 margin-left: 2.5rem;   

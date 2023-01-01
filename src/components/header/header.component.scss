@@ -1,33 +1,47 @@
+@import '_variables';
 .header{
+   
+    background-image: linear-gradient(to right, $primary-color, $secondary-color);
+   
     display: flex;
-    background-image: linear-gradient(to right, rgb(247, 19, 19), rgb(255, 127, 81));
-    padding: 2.5rem;
+    justify-content: space-between;
     align-items: center;
     
-
+    
+    
     &__logo{
-       
+        text-decoration: none;
+        color: $font-color;
+        font-size: 3.5rem;
+        margin-left: 3%;
+
+    }
+
+    &__nav-bar{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        &__text{
-            font-size: 3.5rem;
-            margin-top: 4.5rem;
-            margin-left: -1.5rem;
-            font-family: 'Caramel', cursive;
-            @media only screen and (max-width: 700px){
-                font-size: 2.5rem;   
-               }
+        //justify-content: space-around;
+          
+        font-size: 2.5rem;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1rem;
+        margin-right: 10%;
+       
+        
+        li{
+            margin-left: 2.5rem;
+            a{
+                text-decoration: none;    
+                color: $font-color;   
+            }
+            :hover{
+                color: $terniary-color;
+                transform: scale(1.8);
+            }
+           
+
         }
-        &-popcorn{
-            margin-left: 1rem;
-            margin-top: -1.8rem;
-            height: 70px;
-            width: 100px;
-        }
-        &-stars{
-            width: 120px;;
-        }
+
     }
     @media only screen and (max-width: 700px){
         justify-content: center;  

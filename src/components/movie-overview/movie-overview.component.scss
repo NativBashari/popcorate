@@ -1,0 +1,85 @@
+@import '_variables';
+.overview-container{
+    position: relative;
+
+   
+
+
+    &__content{
+      width: 50%;
+      position: absolute;
+      left: 0;
+      color: $font-color;
+      height: 64vh;
+      background-image: linear-gradient(to right,#000 25%,transparent 99%,transparent 100%);
+      padding-top: 12rem ;
+
+      @media only screen and (max-width: 900px){
+        height: 31vh;
+        padding-top: 4rem;
+       } 
+
+
+      &__title{
+        font-size: 5rem;
+        padding-bottom: 0;
+        @media only screen and (max-width: 900px){
+            font-size: 1.8rem;
+        }
+        h6{     
+            margin: 1rem;
+        }
+      }
+      &__rating{
+        font-size: 2.5rem;
+        margin: 1rem;
+        @media only screen and (max-width: 900px){
+            font-size: 1.2rem;
+        }
+
+        .rate{
+            font-size: 2.9rem;
+            @media only screen and (max-width: 900px){
+                font-size: 1.5rem;
+            }
+        }
+
+      }
+      &__overview{
+        font-size: 2rem;
+        @media only screen and (max-width: 900px){
+            font-size: 1rem;
+        }
+      }
+      &__btn{
+        margin-top: 2rem;
+        background-color: $terniary-color;
+        width: 10%;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        transition: all .3s;
+        :hover{
+            transform: scale(1.7);
+            background-color: #000;
+        }
+
+      }
+
+
+
+    }
+
+    &__img{
+       width: 100%;
+
+        img{
+            width: 100%;
+            height: 80vh;
+            @media only screen and (max-width: 900px){
+                height: 35vh;
+            }
+        }
+       
+    }
+}
