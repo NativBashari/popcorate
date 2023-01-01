@@ -4,7 +4,7 @@
             <h6>{{movie.title}}</h6>
         </div>
         <div class="overview-container__content__rating">
-            <span class="rate">{{movie.vote_average}}</span>
+            <span class="rate">{{movie.vote_average | number: '1.1-1'}}</span>
             <span>/10</span>
         </div>
         <div class="overview-container__content__overview">

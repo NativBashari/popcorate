@@ -16,11 +16,11 @@ export class DiscoverGenrePageComponent implements OnInit {
   ngOnInit(): void {
     this.activateRoute.params.subscribe((params) => {
       this.id = params['id'];
-      console.log(this.id);
+
     });
     this.genreService.getMoviesFromGerne(this.id).subscribe(res => {
       this.moviesFromGenre = res;
-      console.log(this.moviesFromGenre);
+
     })
   }
 

@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchResultsPageComponent } from '../Pages/search-results-page/search-results-page.component';
 import { GenresListComponent } from '../components/genres-list/genres-list.component';
 import { MovieOverviewComponent } from '../components/movie-overview/movie-overview.component';
+import { MoviesGridComponent } from '../components/movies-grid/movies-grid.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MovieOverviewComponent } from '../components/movie-overview/movie-overv
     SearchMovieComponent,
     SearchResultsPageComponent,
     GenresListComponent,
-    MovieOverviewComponent
+    MovieOverviewComponent,
+    MoviesGridComponent
     ],
   imports: [
     BrowserModule,

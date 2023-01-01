@@ -24,5 +24,9 @@ export class MovieService{
     searchMovies(query:string){
         return this.httpClient.get(`${environment.baseApiUrl}/search/movie?api_key=${environment.APIKey}&language=en-US&query=${query}`);
     }
+    getSimilarMovies(movieId:number){
+        return this.httpClient.get(`${environment.baseApiUrl}/movie/${movieId}/similar?api_key=${environment.APIKey}`);
+    }
+
 }
 export default MovieService;

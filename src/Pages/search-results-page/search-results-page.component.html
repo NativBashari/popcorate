@@ -1,3 +1,1 @@
-<div class="movies-grid">
-    <app-movie-item *ngFor="let movie of searchResults.results" [movieId]="movie.id"></app-movie-item>
-</div>
+<app-movies-grid [moviesList]="searchResults.results"></app-movies-grid>

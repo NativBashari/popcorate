@@ -11,6 +11,7 @@ export class MoviePageComponent implements OnInit {
 
   id: number = 0;
   movie: any;
+  similarMovies: any;
   constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService) { }
 
   ngOnInit(): void {
@@ -20,7 +21,9 @@ export class MoviePageComponent implements OnInit {
 
     this.movieService.getById(this.id).subscribe(res => {
       this.movie = res;
-      console.log(this.movie);
+    })
+    this.movieService.getSimilarMovies(this.id).subscribe(res =>{
+      this.similarMovies = res;
     })
   }
 
