@@ -1,0 +1,27 @@
+@import '_variables';
+.footer{
+    background-color: $secondary-color;
+    color: $font-color;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.icons{
+    padding: 1.5rem;
+
+}
+.icon{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+
+    
+    :hover{
+        fill: #fff;
+        transform: scale(1.2);
+    }
+
+}

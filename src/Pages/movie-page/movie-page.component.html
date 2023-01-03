@@ -2,10 +2,7 @@
     <section>
         <app-movie-overview [movie]="movie"></app-movie-overview>
     </section>
-    <div>
-        <app-movie-galery [movieId]="movie.id"></app-movie-galery>
-    </div>
-    <div>
-        <app-movies-list [moviesList]="similarMovies.results" [listTitle]="'Similar movies'"></app-movies-list>
-    </div>
+    <section>
+        <app-movie-tabs [movie]="movie" [similarMovies]="similarMovies"></app-movie-tabs>
+    </section>
 </section>

@@ -1,0 +1,25 @@
+<section class="movie-tabs">
+    <div class="tabs-container">
+        <ul class="tabs-container__tabs">
+            <li class="tabs-container__tab"><a (click)="changeTab('images')">Images</a></li>
+            <li class="tabs-container__tab"><a (click)="changeTab('similar')">Similar</a ></li>
+            <li class="tabs-container__tab mobile-hide"><a (click)="changeTab('reviews')">Reviews</a></li>
+        </ul>
+        <div *ngIf="modifier == 'images'" class="images-content">
+            <div>
+                <app-movie-galery [movieId]="movie.id"></app-movie-galery>
+            </div>          
+        </div>
+        <div *ngIf="modifier == 'similar'" class="similar-content">
+            <div>
+                <app-movies-list [moviesList]="similarMovies.results" [listTitle]="'Similar movies'"></app-movies-list>
+            </div>
+        </div>
+        <div *ngIf="modifier == 'reviews'">
+            <div>
+                <app-reviews-list [movieId]="movie.id"></app-reviews-list>
+            </div>
+        </div>
+
+    </div>
+</section>

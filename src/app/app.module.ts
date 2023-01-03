@@ -23,6 +23,11 @@ import { SearchResultsPageComponent } from '../Pages/search-results-page/search-
 import { GenresListComponent } from '../components/genres-list/genres-list.component';
 import { MovieOverviewComponent } from '../components/movie-overview/movie-overview.component';
 import { MoviesGridComponent } from '../components/movies-grid/movies-grid.component';
+import { FooterComponent } from '../components/footer/footer.component';
+import { MovieTabsComponent } from '../components/movie-tabs/movie-tabs.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -40,7 +45,9 @@ import { MoviesGridComponent } from '../components/movies-grid/movies-grid.compo
     SearchResultsPageComponent,
     GenresListComponent,
     MovieOverviewComponent,
-    MoviesGridComponent
+    MoviesGridComponent,
+    FooterComponent,
+    MovieTabsComponent,
     ],
   imports: [
     BrowserModule,
@@ -48,6 +55,7 @@ import { MoviesGridComponent } from '../components/movies-grid/movies-grid.compo
     HttpClientModule,
     AppRoutingModule
   ],
+  
   providers: [MovieService, ImagesService, DiscoverList,GenresService],
   bootstrap: [AppComponent]
 })
