@@ -18,6 +18,13 @@ $gray: #9b9b9b;
 .btn{
     align-self: center;
     margin-top: 3.4rem;
+    background-color: $terniary-color;
+    color: $font-color;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2);
+    }
 }
 
 .form__field {

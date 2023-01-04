@@ -2,15 +2,12 @@
 .overview-container{
     position: relative;
 
-   
-
-
     &__content{
       width: 50%;
       position: absolute;
       left: 0;
       color: $font-color;
-      height: 64vh;
+      height: 68vh;
       background-image: linear-gradient(to right,#000 25%,transparent 99%,transparent 100%);
       padding-top: 12rem ;
 

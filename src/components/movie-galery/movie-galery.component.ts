@@ -21,7 +21,6 @@ export class MovieGaleryComponent implements OnInit {
   ngOnInit(): void {
     this.movieService.getMovieImages(this.movieId).subscribe(res => {
       this.movieImages = res as {id: number, logos: any[], posters: [], backdrops: []};
-      console.log(this.movieImages)
     },
     (error) => {
       console.log(error)

@@ -1,9 +1,9 @@
 <section class="movie-tabs">
     <div class="tabs-container">
-        <ul class="tabs-container__tabs">
-            <li class="tabs-container__tab"><a (click)="changeTab('images')">Images</a></li>
-            <li class="tabs-container__tab"><a (click)="changeTab('similar')">Similar</a ></li>
-            <li class="tabs-container__tab mobile-hide"><a (click)="changeTab('reviews')">Reviews</a></li>
+        <ul class="tabs-container__tabs" #ul>
+            <li id="images" class="tabs-container__tab active"><a (click)="changeTab('images')">Images</a></li>
+            <li id="similar" class="tabs-container__tab"><a (click)="changeTab('similar')">Similar</a ></li>
+            <li id="reviews" class="tabs-container__tab mobile-hide"><a (click)="changeTab('reviews')">Reviews</a></li>
         </ul>
         <div *ngIf="modifier == 'images'" class="images-content">
             <div>
