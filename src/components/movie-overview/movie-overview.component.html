@@ -1,21 +1,27 @@
 <section class="overview-container">
-    <div class="overview-container__content">
-        <div class="overview-container__content__title">
-            <h6>{{movie.title}}</h6>
+    <div class="overview">
+        <div class="overview__img">
+            <img src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}">
         </div>
-        <div class="overview-container__content__rating">
-            <span class="rate">{{movie.vote_average | number: '1.1-1'}}</span>
-            <span>/10</span>
+        <div class="overview__content">
+            <div class="overview__title">
+                <h6>{{movie.title}}</h6>
+            </div>
+            <div class="overview__metadata">
+                <p>{{movie.release_date | date: 'yyyy'}}</p>
+                <p>{{movie.runtime}} min</p>
+                <p>{{movie.genres[0].name}}</p>
+            </div>
+
+            <div class="overview__overview">
+                <p>{{movie.overview}}</p>
+            </div>
+            <div class="overview__button">
+                <button>Play</button>
+            </div>
+
         </div>
-        <div class="overview-container__content__overview">
-            <p>{{movie.overview}}</p>
-        </div>
-        <div >
-            <button class="overview-container__content__btn">Watch</button>
-        </div>
-    </div>
-    <div class="overview-container__img">
-        <img src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}">
+
     </div>
 
     

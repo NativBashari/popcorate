@@ -21,6 +21,7 @@ export class MoviePageComponent implements OnInit {
 
     this.movieService.getById(this.id).subscribe(res => {
       this.movie = res;
+      console.log(this.movie);
     })
     this.movieService.getSimilarMovies(this.id).subscribe(res =>{
       this.similarMovies = res;

@@ -25,6 +25,7 @@ import { MovieOverviewComponent } from '../components/movie-overview/movie-overv
 import { MoviesGridComponent } from '../components/movies-grid/movies-grid.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { MovieTabsComponent } from '../components/movie-tabs/movie-tabs.component';
+import { NavigationComponent } from '../components/navigation/navigation.component';
 
 
 
@@ -48,6 +49,7 @@ import { MovieTabsComponent } from '../components/movie-tabs/movie-tabs.componen
     MoviesGridComponent,
     FooterComponent,
     MovieTabsComponent,
+    NavigationComponent,
     ],
   imports: [
     BrowserModule,
