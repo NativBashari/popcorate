@@ -1,0 +1,28 @@
+@import '_variables';
+.move-pages{
+    background-color: $secondary-color;
+    margin: 3rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: $font-color;
+    align-items: center;
+
+    &__button{
+        cursor: pointer;
+    }
+    &__total-results{
+        color: $terniary-color;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 450px){
+            font-size: 2rem ;
+           }
+    }
+    @media only screen and (max-width: 450px){
+       font-size: 1.5rem ;
+      }
+}
+.disable{
+    pointer-events: none;
+    opacity: 0.5;
+}

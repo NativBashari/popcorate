@@ -1,1 +1,2 @@
 <app-movies-grid [moviesList]="moviesFromGenre.results"></app-movies-grid>
+<app-move-pages (onMovePage)="movePageHandler($event)" [totalResults]="moviesFromGenre.total_results"></app-move-pages>

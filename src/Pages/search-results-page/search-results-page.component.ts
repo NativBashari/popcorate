@@ -11,6 +11,7 @@ export class SearchResultsPageComponent implements OnInit {
 
   queryString: string ='';
   searchResults: any;
+  page: number =1;
   constructor(private activatedRoute: ActivatedRoute, private moviesService: MovieService) { }
 
 
@@ -18,9 +19,18 @@ export class SearchResultsPageComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.queryString = params['query'];
     });
-    this.moviesService.searchMovies(this.queryString).subscribe(res => {
+   this.getData();
+  }
+
+  getData(){
+    this.moviesService.searchMovies(this.queryString, this.page).subscribe(res => {
       this.searchResults = res;
     })
+  }
+  movePageHandler(nextOrPrev: boolean){
+    nextOrPrev ? this.page++ : this.page--;
+    this.getData(); 
+
   }
 
 }

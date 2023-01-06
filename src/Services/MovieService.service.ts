@@ -21,8 +21,8 @@ export class MovieService{
     getMovieReviews(id: number){
         return this.httpClient.get(`${environment.baseApiUrl}/movie/${id}/reviews?api_key=${environment.APIKey}`)
     }
-    searchMovies(query:string){
-        return this.httpClient.get(`${environment.baseApiUrl}/search/movie?api_key=${environment.APIKey}&language=en-US&query=${query}`);
+    searchMovies(query:string ,page:number){
+        return this.httpClient.get(`${environment.baseApiUrl}/search/movie?api_key=${environment.APIKey}&language=en-US&query=${query}&page=${page}`);
     }
     getSimilarMovies(movieId:number){
         return this.httpClient.get(`${environment.baseApiUrl}/movie/${movieId}/similar?api_key=${environment.APIKey}`);

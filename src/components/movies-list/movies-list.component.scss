@@ -22,12 +22,14 @@
      
      @media only screen and (max-width: 450px){
         overflow: auto; 
-        width: 300px;
+        width: 185px;
         margin-left: 2.5rem;
+        position: relative;
+        left: 5rem;
        }
-       @media only screen and (max-width: 391px){
-        width: 270px;
-      }
+      //  @media only screen and (max-width: 391px){
+      //   width: 270px;
+      // }
 
 }
 .cover{

@@ -26,6 +26,7 @@ import { MoviesGridComponent } from '../components/movies-grid/movies-grid.compo
 import { FooterComponent } from '../components/footer/footer.component';
 import { MovieTabsComponent } from '../components/movie-tabs/movie-tabs.component';
 import { NavigationComponent } from '../components/navigation/navigation.component';
+import { MovePagesComponent } from '../components/move-pages/move-pages.component';
 
 
 
@@ -50,6 +51,7 @@ import { NavigationComponent } from '../components/navigation/navigation.compone
     FooterComponent,
     MovieTabsComponent,
     NavigationComponent,
+    MovePagesComponent,
     ],
   imports: [
     BrowserModule,

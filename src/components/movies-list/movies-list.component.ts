@@ -15,10 +15,10 @@ export class MoviesListComponent implements OnInit {
   ngOnInit(): void {
   }
   scrollLeft(){
-    this.listContent!.nativeElement.scrollTo({left: (this.listContent!.nativeElement.scrollLeft -  this.listContent?.nativeElement.offsetWidth +10), behavior: 'smooth' })
+    this.listContent!.nativeElement.scrollTo({left: (this.listContent!.nativeElement.scrollLeft -  this.listContent?.nativeElement.offsetWidth +7), behavior: 'smooth' })
   }
   scrollRight(){
-    this.listContent!.nativeElement.scrollTo({left: (this.listContent!.nativeElement.scrollLeft + this.listContent?.nativeElement.offsetWidth +10), behavior: 'smooth' });
+    this.listContent!.nativeElement.scrollTo({left: (this.listContent!.nativeElement.scrollLeft + this.listContent?.nativeElement.offsetWidth +7), behavior: 'smooth' });
   }
 
 }

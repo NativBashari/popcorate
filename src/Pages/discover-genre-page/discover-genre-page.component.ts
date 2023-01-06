@@ -11,6 +11,7 @@ export class DiscoverGenrePageComponent implements OnInit {
 
   id: number= 0;
   moviesFromGenre: any;
+  page:number= 1;
   constructor(private activateRoute: ActivatedRoute, private genreService: GenresService) { }
 
   ngOnInit(): void {
@@ -18,10 +19,18 @@ export class DiscoverGenrePageComponent implements OnInit {
       this.id = params['id'];
 
     });
-    this.genreService.getMoviesFromGerne(this.id).subscribe(res => {
+    this.getData();  
+  }
+  getData(){
+    this.genreService.getMoviesFromGerne(this.id, this.page).subscribe(res => {
       this.moviesFromGenre = res;
-
+      console.log(this.moviesFromGenre);
     })
+  }
+  movePageHandler(nextOrPrev:boolean){
+    nextOrPrev ? this.page++ : this.page--;
+    this.getData(); 
+
   }
 
 }
