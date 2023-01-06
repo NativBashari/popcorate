@@ -31,7 +31,12 @@ export class MovePagesComponent implements OnInit {
       this.currentMovieEnd -=21;
     }  
   
-    
+    window.scroll({
+      top:0,
+      left:0,
+      behavior: 'smooth'
+
+    });
   }
 
 

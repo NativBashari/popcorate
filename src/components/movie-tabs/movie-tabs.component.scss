@@ -10,7 +10,8 @@ color: $font-color;
         font-size: 3rem;
         list-style: none;
         @media only screen and (max-width: 450px){
-            font-size: 2rem;   
+            font-size: 2rem; 
+            padding-left: 0;  
            }    
        
     }

@@ -18,7 +18,8 @@ export class MovieItemComponent implements OnInit {
   ngOnInit(): void {
     this.movieService.getById(this.movieId).subscribe(res =>{
       this.movie = res
-      this.movieBackdropPath = `https://www.themoviedb.org/t/p/w533_and_h300_bestv2${this.movie.poster_path}`
+      this.movieBackdropPath = `https://www.themoviedb.org/t/p/w533_and_h300_bestv2${this.movie.backdrop_path}`
+      console.log(this.movie);
     }
     );
 

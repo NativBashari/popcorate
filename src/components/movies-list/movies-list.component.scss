@@ -3,6 +3,7 @@
     text-align: left;
     margin: auto 8rem;
     color: $font-color;
+    border-radius: 3%;
     &__title{
         font-size: 2.5rem;
         padding-top: 1.5rem;
@@ -13,7 +14,7 @@
            }
     }
     @media only screen and (max-width: 450px){
-        margin: auto 2rem;  
+        margin: auto 1rem;  
        }
 }
 .movie-list-container{
@@ -22,14 +23,11 @@
      
      @media only screen and (max-width: 450px){
         overflow: auto; 
-        width: 185px;
+        width: 300px;
         margin-left: 2.5rem;
         position: relative;
-        left: 5rem;
        }
-      //  @media only screen and (max-width: 391px){
-      //   width: 270px;
-      // }
+  
 
 }
 .cover{
