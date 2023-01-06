@@ -8,11 +8,11 @@
         padding-top: 1.5rem;
         text-transform: uppercase;
         font-family: 'Dosis', sans-serif; 
-        @media only screen and (max-width: 700px){
+        @media only screen and (max-width: 450px){
             font-size: 1.5rem;   
            }
     }
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 450px){
         margin: auto 2rem;  
        }
 }
@@ -20,24 +20,28 @@
      display: flex;
      overflow: hidden;
      
-     @media only screen and (max-width: 700px){
-        overflow: auto;   
+     @media only screen and (max-width: 450px){
+        overflow: auto; 
+        width: 300px;
+        margin-left: 2.5rem;
        }
+       @media only screen and (max-width: 391px){
+        width: 270px;
+      }
 
 }
 .cover{
     padding: 0px 30px;
     position: relative;
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 450px){
         padding: 0;
        }
+      
    
 }
 .button-box{
     height: 15%;
-    @media only screen and (max-width: 700px){
-        height: 100%;   
-       }
+    
 }
 
   .left {
@@ -60,7 +64,5 @@ button{
     &:hover{
         background-color: aliceblue;
     }
-    @media only screen and (max-width: 700px){
-        display: none;   
-       }
+    
 }

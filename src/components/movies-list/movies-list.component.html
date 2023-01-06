@@ -4,7 +4,7 @@
         <div class="button-box">
             <button  class="left" (click)="scrollLeft()">&#8592;</button>
         </div>
-            <div class="movie-list-container mostly-customized-scrollbar" #listContent>
+            <div class="movie-list-container" #listContent>
                 <div *ngFor="let movie of moviesList" >
                     <app-movie-item  [movieId]="movie.id"></app-movie-item>
                 </div>
