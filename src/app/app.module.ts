@@ -57,7 +57,7 @@ import { MovePagesComponent } from '../components/move-pages/move-pages.componen
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   
   providers: [MovieService, ImagesService, DiscoverList,GenresService],

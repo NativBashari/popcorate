@@ -16,6 +16,7 @@
     @media only screen and (max-width: 450px){
         margin: auto 1rem;  
        }
+
 }
 .movie-list-container{
      display: flex;
@@ -24,8 +25,12 @@
      @media only screen and (max-width: 450px){
         overflow: auto; 
         width: 300px;
-        margin-left: 2.5rem;
+        margin: 3.8rem;
         position: relative;
+       }
+       @media only screen and (max-width: 391px){
+        width: 262px;
+        margin-left: 4.8rem;
        }
   
 
@@ -40,23 +45,29 @@
    
 }
 .button-box{
-    height: 15%;
+    height: 10%;
+    svg{
+      fill: $font-color;
+    }
     
 }
 
   .left {
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 42%;
     height: inherit;
     //transform: translateY(-50%);
   }
   .right {
     position: absolute;
-    right: 0;
+    right: -1.3rem;
     height: inherit;
     top: 48%;
     transform: translatey(-50%);
+    @media only screen and (max-width: 450px){
+      right: 0;
+     }
   }
 button{
     border: none;

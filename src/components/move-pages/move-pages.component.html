@@ -1,6 +1,6 @@
 <div class="move-pages">
     <div class="move-pages__button">
-        <span [ngClass]="currentMovieStart <20 ? 'disable': ''" (click)="movePage(false)">Previeus</span>
+        <span [ngClass]="currentMovieStart <20 ? 'disable': ''" (click)="movePage(false)">Previus</span>
     </div>
     <div class="move-page__info">
         <span>Results {{currentMovieStart}} - {{currentMovieEnd > totalResults ?  totalResults : currentMovieEnd}} / <span class="move-pages__total-results">{{totalResults}}</span></span>
