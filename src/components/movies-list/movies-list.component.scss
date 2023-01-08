@@ -55,6 +55,7 @@
   .left {
     position: absolute;
     left: 0;
+    width: 3rem;
     top: 42%;
     height: inherit;
     //transform: translateY(-50%);
@@ -62,6 +63,7 @@
   .right {
     position: absolute;
     right: -1.3rem;
+    width: 3rem;
     height: inherit;
     top: 48%;
     transform: translatey(-50%);

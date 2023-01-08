@@ -24,6 +24,7 @@
     transition: all 0.2s ease-in-out;
     border-radius: 3%;
     border: 1.5px solid rgb(42, 41, 41);
+    position: relative;
 
     &:hover{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
@@ -51,9 +52,42 @@
     &__release-date{
         font-size: 1.2rem;
         margin: 0.5rem;  
+        position: absolute;
+        padding: 0.2rem 0.5rem;
+        font-size: 1.5rem;
+        background-color: $secondary-color;
+        color: $font-color;
+        top: auto;
+        bottom: 4.5rem;
+        left: 0.6rem;
+        
         @media only screen and (max-width: 450px){
-            font-size: 1rem;   
+            
            }    
+    }
+    &__rating{
+        font-size: 1.2rem;
+        margin: 0.5rem;  
+        position: absolute;
+        padding: 0.2rem 0.5rem;
+        font-size: 1.5rem;
+        background-color: $secondary-color;
+        color: $font-color;
+        top: 1rem;
+        bottom: auto;
+        left: 0.6rem;
+        display: flex;
+        align-items:flex-end;
+        
+        span{
+            color: $terniary-color;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        svg{
+            fill: $terniary-color;
+            width: 2rem;
+        }
     }
  
     &__img{
@@ -72,13 +106,13 @@
     }
 
     @media only screen and (max-width: 450px){
-     height: 450px;
+     height: 390px;
      width: 289px;
      margin: 0.5rem;
         
     }
     @media only screen and (max-width: 391px){
-        height: 400px;
+        height:390px;
         width: 250px;
        }
 
