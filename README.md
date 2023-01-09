@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
+
+## Popcorate app
+This project built with Angular13 & SCSS.
+Data provided from "The Movie Db" API -> https://www.themoviedb.org .
+
+![popcorat](https://user-images.githubusercontent.com/98685509/211339491-96638836-dbfe-4e08-8d7b-8df682d5fa5e.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

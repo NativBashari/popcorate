@@ -1,2 +1,5 @@
+<div>
+    <app-search-movie></app-search-movie>
+</div>
 <app-movies-grid [moviesList]="searchResults.results"></app-movies-grid>
 <app-move-pages (onMovePage)="movePageHandler($event)" [totalResults]="searchResults.total_results"></app-move-pages>
