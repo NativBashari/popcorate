@@ -24,8 +24,7 @@
      
      @media only screen and (max-width: 450px){
         overflow: auto; 
-        width: 300px;
-        margin: 3.8rem;
+        width: 400px;
         position: relative;
        }
        @media only screen and (max-width: 391px){
@@ -49,6 +48,10 @@
     svg{
       fill: $font-color;
     }
+    @media only screen and (max-width: 450px){
+      display: none;
+ }
+    
     
 }
 
