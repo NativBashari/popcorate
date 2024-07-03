@@ -45,6 +45,7 @@
 }
 .button-box{
     height: 10%;
+
     svg{
       fill: $font-color;
     }
@@ -57,18 +58,20 @@
 
   .left {
     position: absolute;
-    left: 0;
-    width: 3rem;
+    left: 4rem;
+    width: 8rem;
     top: 42%;
-    height: inherit;
+    height: 8rem;
+    border-radius: 50px;
     //transform: translateY(-50%);
   }
   .right {
     position: absolute;
-    right: -1.3rem;
-    width: 3rem;
-    height: inherit;
-    top: 48%;
+    right: 2.5rem;
+    width: 8rem;
+    height: 8rem;
+    top: 53%;
+    border-radius: 50px;
     transform: translatey(-50%);
     @media only screen and (max-width: 450px){
       right: 0;
@@ -77,8 +80,9 @@
 button{
     border: none;
     background-color: $terniary-color;
+    cursor:grab;
     &:hover{
         background-color: aliceblue;
     }
-    
+    z-index: 1100;
 }

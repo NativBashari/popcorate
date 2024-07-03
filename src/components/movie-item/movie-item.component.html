@@ -1,14 +1,17 @@
 <div class="all-details-container">
     <p *ngIf="mouseIsHover" class="all-details-container__all-details-text">All Detailes</p>
 </div>
-<div class="movie-box" *ngIf="movie != undefined" (mouseenter)="mouseHover()" (mouseleave)="mouseLeave()" (click)="moveToMovieDetails()">
-    <div>
+<div class="movie-box" *ngIf="movie != undefined">
+    <div (mouseenter)="mouseHover()" (mouseleave)="mouseLeave()" (click)="moveToMovieDetails()">
         <img class="movie-box__img" [src]="movieBackdropPath" (error)="updateUrl($event)">    
     </div>
     <div class="movie-box__information">
         <div>
             <h6 class="movie-box__title">{{movie.title}}</h6>
         </div>
+    </div>
+    <div class="movie-box__watchlist">
+        <button class="movie-box__watchlist__button">Watchlist</button>
     </div>
     <p class="movie-box__release-date">{{movie.release_date | date :'yyyy'}}</p>
     <p class="movie-box__rating"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg><span>{{movie.vote_average | number:'1.1-1' }}</span> / 10</p>
