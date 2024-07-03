@@ -9,6 +9,16 @@
         padding-top: 1.5rem;
         text-transform: uppercase;
         font-family: 'Dosis', sans-serif; 
+        &:before {
+          background: $terniary-color;
+          border-radius: 4px;
+          content: "";
+          margin-left: -.75rem;
+          align-self: flex-start;
+          position: absolute;
+          height: 2.7rem;
+          width: 4px;
+      }
         @media only screen and (max-width: 450px){
             font-size: 1.5rem;   
            }
