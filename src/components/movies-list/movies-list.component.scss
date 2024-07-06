@@ -34,12 +34,13 @@
      
      @media only screen and (max-width: 450px){
         overflow: auto; 
-        width: 400px;
+        // width: 400px;
         position: relative;
        }
        @media only screen and (max-width: 391px){
-        width: 262px;
-        margin-left: 4.8rem;
+        // width: 262px;
+        // margin-left: 4.8rem;
+        overflow: auto;
        }
   
 

@@ -92,14 +92,21 @@
         left: 0.6rem;
         
         @media only screen and (max-width: 450px){
-            
+            bottom: 7.5rem;
+            top: auto;
+            left: 0.3rem;
            }    
+        //    @media only screen and (max-width: 391px){
+        //     bottom: 7.5rem;
+        //     top: auto;
+        //     left: 0.1rem;
+        //   }
     }
     &__rating{
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
         margin: 0.5rem;  
         position: absolute;
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.5rem;
         font-size: 1.5rem;
         background-color: $secondary-color;
         color: $font-color;
@@ -113,11 +120,24 @@
             color: $terniary-color;
             font-size: 1.7rem;
             font-weight: bold;
+            @media only screen and (max-width: 391px){
+             font-size: 1.4rem;
+            }
         }
         svg{
             fill: $terniary-color;
             width: 2rem;
+             @media only screen and (max-width: 391px){
+            width: 1.5rem;
+          }
         }
+        @media only screen and (max-width: 450px){
+            top: 0.5rem;
+            left: 0.1rem;
+          }
+          @media only screen and (max-width: 391px){
+            font-size: 1rem;
+          }
     }
  
     &__img{
@@ -132,23 +152,24 @@
     }
     @media only screen and (max-width: 450px){
          width: 100%; 
-         height: 400px;
+         height: 185px;
        }
-       @media only screen and (max-width: 450px){
-            height: 185px;
+       @media only screen and (max-width: 391px){
+            height: 140px;
        }
 
     }
 
     @media only screen and (max-width: 450px){
-     height: 228px;
+     height: 260px;
      width: 135px;
      margin: 0.5rem;
         
     }
     @media only screen and (max-width: 391px){
-        height:390px;
-        width: 250px;
+        height:215px;
+        width: 110px;
+        
        }
     
 }
